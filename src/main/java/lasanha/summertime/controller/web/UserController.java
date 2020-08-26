@@ -10,7 +10,7 @@ public class UserController {
 
     @RequestMapping(method = RequestMethod.GET, path = {"/list", "/", ""})
     public String listCustomers() {
-        return "user/home";
+        return "home";
     }
 
 }

@@ -8,7 +8,7 @@ public class MainController {
 
     @RequestMapping(path = {"/home", "/", ""})
     public String home() {
-        return "user/home";
+        return "home";
     }
 
 

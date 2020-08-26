@@ -34,15 +34,15 @@ public class RestMainController {
             return "customer/add-update";
         }
 
-        User savedUser = UserService.save(userDtoToUser.convert(userDto));
+        User savedUser = userService.save(userDtoToUser.convert(userDto));
 
         return "redirect:/";
     }
-
+/*
     @RequestMapping(method = RequestMethod.POST, path = "/login")
     public String SignUp(@RequestBody UserDto userDto) {
 
 
     }
-
+*/
 }

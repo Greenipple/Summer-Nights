@@ -16,7 +16,7 @@ import org.springframework.stereotype.Component;
             this.userService = userService;
         }
 
-        public void convert(UserDto userDto){
+        public User convert(UserDto userDto){
 
             User user = (userDto.getId() != null? userService.getUser(userDto.getId()): new User());
 
@@ -25,7 +25,6 @@ import org.springframework.stereotype.Component;
             user.setAge(userDto.getAge());
             user.setEmail(userDto.getEmail());
 
-
-
+            return user;
         }
 }

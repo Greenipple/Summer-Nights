@@ -5,7 +5,7 @@
     <artifactId>project</artifactId>
     <version>0.0.1</version>
     <packaging>war</packaging>
-    <name>Lasagna Project</name>
+    <name>Summer Time</name>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
@@ -95,7 +95,7 @@
         </dependency>
     </dependencies>
     <build>
-        <finalName>Java Bank</finalName>
+        <finalName>Summer Time</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

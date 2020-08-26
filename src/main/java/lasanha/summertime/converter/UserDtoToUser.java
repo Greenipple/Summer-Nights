@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 
     @Component
     public class UserDtoToUser {
-
+/*
         private UserService userService;
 
         @Autowired
@@ -22,5 +22,5 @@ import org.springframework.stereotype.Component;
 
 
 
-        }
+        }*/
 }

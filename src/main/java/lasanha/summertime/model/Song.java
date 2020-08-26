@@ -19,9 +19,7 @@ public class Song {
 
     String author;
 
-    String musicGenre;
-
-    boolean songRating;
+    //boolean songRating;
 
     @ManyToMany(mappedBy = "songs")
     private Set<User> users = new HashSet<>();
@@ -60,22 +58,6 @@ public class Song {
 
     public void setAuthor(String author) {
         this.author = author;
-    }
-
-    public Integer getSongRating() {
-        return songRating;
-    }
-
-    public void setSongRating(Integer songRating) {
-        this.songRating = songRating;
-    }
-
-    public String getMusicGenre() {
-        return musicGenre;
-    }
-
-    public void setMusicGenre(String musicGenre) {
-        this.musicGenre = musicGenre;
     }
 
     public Set<User> getUsers() {

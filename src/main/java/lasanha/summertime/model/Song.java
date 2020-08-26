@@ -21,9 +21,14 @@ public class Song {
 
     String musicGenre;
 
+    boolean songRating;
+
     @ManyToMany(mappedBy = "songs")
     private Set<User> users = new HashSet<>();
 
+    @ManyToOne()
+    @JoinColumn(name = "fk_musicGenre")
+    private MusicGenre musicGenre;
 
     public Integer getId() {
         return id;
@@ -55,6 +60,14 @@ public class Song {
 
     public void setAuthor(String author) {
         this.author = author;
+    }
+
+    public Integer getSongRating() {
+        return songRating;
+    }
+
+    public void setSongRating(Integer songRating) {
+        this.songRating = songRating;
     }
 
     public String getMusicGenre() {

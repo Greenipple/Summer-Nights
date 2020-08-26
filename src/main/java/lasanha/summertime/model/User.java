@@ -15,16 +15,17 @@ public class User {
 
     private  String userName;
 
-    private String passWord;
+    private String password;
 
     private String email;
+
 
     @ManyToMany
     @JoinTable(name = "user_songs",
             joinColumns = { @JoinColumn(name = "fk_userId") },
-            inverseJoinColumns = {@JoinColumn (name = "fk_songId")}
-    )
-    Set<Song> songs = new HashSet<Song>();
+            inverseJoinColumns = {@JoinColumn (name = "fk_songId") }
+            )
+    Set<Song> songs = new HashSet<>();
 
     public Integer getId() {
         return id;
@@ -39,11 +40,11 @@ public class User {
     }
 
     public String getPassWord() {
-        return passWord;
+        return password;
     }
 
     public void setPassWord(String passWord) {
-        this.passWord = passWord;
+        this.password = passWord;
     }
 
     public String getEmail() {

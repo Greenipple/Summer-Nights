@@ -8,7 +8,7 @@ import javax.validation.Valid;
 @RestController
 @RequestMapping("/api/")
 public class RestMainController {
-
+/*
     @RequestMapping(method = RequestMethod.POST, path = "/signup")
     public String SignUp(@Valid @RequestBody UserDto userDto, BindingResult bindingResult) {
 
@@ -26,5 +26,5 @@ public class RestMainController {
 
 
     }
-
+*/
 }

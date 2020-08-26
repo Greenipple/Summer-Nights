@@ -19,6 +19,7 @@ public class User {
 
     private String email;
 
+    private Integer age;
 
     @ManyToMany
     @JoinTable(name = "user_songs",
@@ -71,7 +72,6 @@ public class User {
         this.songs = songs;
     }
 
-    private Integer age;
 
 
 

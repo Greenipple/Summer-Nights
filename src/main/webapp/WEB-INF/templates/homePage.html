@@ -10,6 +10,8 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 
+    <script src="homePage.js"></script>
+
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
         crossorigin="anonymous">
@@ -35,6 +37,32 @@
 
             <br>
             <br>
+
+            <form id="data-form" action="#" method="post">
+
+                <input id="update-id" name="update-id" type="hidden">
+                <table id="data-input" class="table table-bordered">
+                    <tr>
+                        <th>User Name</th>
+                        <th>Email</th>
+                        <th>Password</th>
+                        <th>Age</th>
+                    </tr>
+                    <tr>
+                        <td><input id="username" name="username" type="text" class="form-control input-lg" minlength="2" required/></td>
+                        <td><input id="email" name="email" type="email" class="form-control input-lg" required/></td>
+                        <td><input id="password" name="password" type="text" class="form-control input-lg" minlength="2" required/></td>
+                        <td><input id="age" name="age" type="text" class="form-control input-lg" minlength="2" required/></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            <button id="submit-btn" type="button" class="btn btn-success">Submit</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+
+
             <br>
             <br>
 

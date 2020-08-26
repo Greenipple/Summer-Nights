@@ -27,7 +27,7 @@ public class RestMainController {
         this.userDtoToUser = userDtoToUser;
     }
 
-    @RequestMapping(method = RequestMethod.POST, path = "/signup")
+    @RequestMapping(method = RequestMethod.POST, path = "signup")
     public String SignUp(@Valid @RequestBody UserDto userDto, BindingResult bindingResult) {
 
         if (bindingResult.hasErrors()) {

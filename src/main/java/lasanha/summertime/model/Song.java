@@ -19,8 +19,6 @@ public class Song {
 
     String author;
 
-    String musicGenre;
-
     Integer songRating;
 
     @ManyToMany(mappedBy = "songs")

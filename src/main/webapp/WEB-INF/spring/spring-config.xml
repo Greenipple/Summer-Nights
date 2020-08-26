@@ -16,6 +16,8 @@
     <!-- User @Controller, @Service annotations -->
     <mvc:annotation-driven/>
 
+    <mvc:resources mapping="/assets/**" location="/WEB-INF/templates/**"/>
+
     <!-- Base package to search for spring beans -->
     <context:component-scan base-package="lasanha.summertime"/>
 

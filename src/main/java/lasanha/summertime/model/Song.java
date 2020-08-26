@@ -62,22 +62,6 @@ public class Song {
         this.author = author;
     }
 
-    public Integer getSongRating() {
-        return songRating;
-    }
-
-    public void setSongRating(Integer songRating) {
-        this.songRating = songRating;
-    }
-
-    public String getMusicGenre() {
-        return musicGenre;
-    }
-
-    public void setMusicGenre(String musicGenre) {
-        this.musicGenre = musicGenre;
-    }
-
     public Set<User> getUsers() {
         return users;
     }

@@ -12,11 +12,9 @@ public class MainController {
         return "homePage";
     }
 
-    @RequestMapping(path = "/tellmemore/{id}")
+    @RequestMapping(path = "/user/{id}")
     public String showTellMeMore(@PathVariable Integer id) {
-
         return "userPage";
     }
-    
 
 }

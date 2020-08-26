@@ -17,7 +17,7 @@
     <mvc:annotation-driven/>
 
     <!-- Base package to search for spring beans -->
-    <context:component-scan base-package="org.lasagnas.project"/>
+    <context:component-scan base-package="lasanha.summertime"/>
 
     <!--mvc:interceptors>
         <bean class="org.academiadecodigo.javabank.interceptor.LogRequestsInterceptor"/>

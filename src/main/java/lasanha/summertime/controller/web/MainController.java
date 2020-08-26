@@ -9,17 +9,14 @@ public class MainController {
 
     @RequestMapping(path = {"/home", "/", ""})
     public String showHome() {
-        return "home";
+        return "homePage";
     }
 
     @RequestMapping(path = "/tellmemore/{id}")
     public String showTellMeMore(@PathVariable Integer id) {
 
-        return "tellmemore";
+        return "userPage";
     }
-
-
-
-
+    
 
 }

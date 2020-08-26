@@ -1,4 +1,4 @@
-package lasanha.summertime.Launcher;
+package lasanha.summertime.launcher;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

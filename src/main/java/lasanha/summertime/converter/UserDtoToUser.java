@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 
     @Component
     public class UserDtoToUser {
-/*
+
         private UserService userService;
 
         @Autowired
@@ -20,7 +20,12 @@ import org.springframework.stereotype.Component;
 
             User user = (userDto.getId() != null? userService.getUser(userDto.getId()): new User());
 
+            user.setUserName(userDto.getUserName());
+            user.setPassWord(userDto.getPassword());
+            user.setAge(userDto.getAge());
+            user.setEmail(userDto.getEmail());
 
 
-        }*/
+
+        }
 }

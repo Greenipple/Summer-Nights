@@ -25,6 +25,10 @@ public class UserDto {
     @NotBlank(message ="please input a valid email")
     private String email;
 
+    @NotNull(message = "Please insert you age")
+    @NotBlank(message = "Please fill this field")
+    public Integer age;
+
     public Integer getId() {
         return id;
     }
@@ -45,6 +49,8 @@ public class UserDto {
         return password;
     }
 
+
+
     public void setPassword(String password) {
         this.password = password;
     }
@@ -55,5 +61,13 @@ public class UserDto {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public Integer getAge() {
+        return age;
+    }
+
+    public void setAge(Integer age) {
+        this.age = age;
     }
 }

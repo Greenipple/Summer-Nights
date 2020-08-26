@@ -21,7 +21,7 @@ public class Song {
 
     String musicGenre;
 
-    boolean songRating;
+    Integer songRating;
 
     @ManyToMany(mappedBy = "songs")
     private Set<User> users = new HashSet<>();

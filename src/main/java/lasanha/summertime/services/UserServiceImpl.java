@@ -23,7 +23,7 @@ public class UserServiceImpl implements UserService {
     @Override
     public AppUser getUser(Integer id) {
 
-        return (AppUser) jpaUserDao.findById(id);
+        return jpaUserDao.findById(id);
     }
 
     @Transactional
@@ -91,12 +91,13 @@ public class UserServiceImpl implements UserService {
             }
 
         }
-
     }
 */
     @Override
     public void addSong(AppUser user, Song song) {
         jpaUserDao.addSong(user, song);
     }
+
+    // for commit
 }
 

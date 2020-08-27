@@ -64,16 +64,13 @@ public class User {
         this.age = age;
     }
 
-    public Set<Song> getSongs() {
-        return songs;
+    public Set<Song> getSongs(User user) {
+        return user.getSongs(user);
     }
 
     public void setSongs(Set<Song> songs) {
         this.songs = songs;
     }
-
-
-
 
 }
 

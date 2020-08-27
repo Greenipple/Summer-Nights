@@ -5,6 +5,7 @@ import lasanha.summertime.model.Song;
 import lasanha.summertime.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 @Service
 public class UserServiceImpl implements UserService {
@@ -22,6 +23,7 @@ public class UserServiceImpl implements UserService {
         return (User) jpaUserDao.findById(id);
     }
 
+    @Transactional
     @Override
     public User save(User user) {
 
@@ -29,6 +31,7 @@ public class UserServiceImpl implements UserService {
 
     }
 
+    @Transactional
     @Override
     public void delete(Integer id) {
 

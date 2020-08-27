@@ -9,7 +9,7 @@ public class MainController {
 
     @RequestMapping(path = {"/home", "/", ""})
     public String showHome() {
-        return "homePage";
+        return "homePage.html";
     }
 
     @RequestMapping(path = "/resources/{item}")

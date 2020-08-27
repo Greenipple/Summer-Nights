@@ -8,9 +8,16 @@
     <meta name="generator" content="Bootply" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 
     <script src="https://summer-nights.herokuapp.com/resources/homePage.js"></script>
+
+    <script src="homePage.js"></script>
+
+      <link rel="stylesheet" type="text/css" href="../../../../../../../Desktop/homepage/homePage.css"/>
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
@@ -22,68 +29,93 @@
 </head>
 
 <body>
-    <div class="AllPage">
-        <div class="AllPage2">
 
-            
-            
-            <h1 id ="HomePageTitleId" class="HomePageTitleClass">Summer Nights</h1>
-<br>
-            <h3 id="BeforeButtonsId" class="BeforeButtonsClass">Are you ready?</h3>
+    <div class="container">
 
+    <div class="jumbotron">
+        <h1 class="display-4">SUMMERNIGHTS<span class="badge badge-secondary">New</span></h1>
+        <h6>"Sing like no one is listening.
+          Love like you’ve never been hurt.
+          Dance like nobody’s watching,
+          and live like it’s heaven on earth."</h6>
+        <hr class="my-4">
+        <button id="popover" type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Tell me more.</button>
+      </div>
 
-                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxAQEBATEBARDxUVEBIWDw8PEBUNDQ8QFRIXGBURFRUYHiggGBolGxUTITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGRAQGysdHSUtLSstLS0tLS0tLS0tLTEtLS0tLS0tLS0tLS0tKy0tLSstLSsrLS0tLSs3Ny0tLS0rLf/AABEIAKoBKQMBIgACEQEDEQH/xAAbAAACAgMBAAAAAAAAAAAAAAAABQMEAQIHBv/EAEYQAAECAwMGCQkFCAIDAAAAAAABAgMEExEU0RIhIlNhsRUxcXKBkpOywTJBUWKRobPC8CNzgqK0QkNSY4Ojw+EF0jOkxP/EABkBAQEBAQEBAAAAAAAAAAAAAAABAgMEBf/EACIRAQADAAMBAAICAwAAAAAAAAABEhMCAxEhMUEiUQRh8P/aAAwDAQACEQMRAD8A4pe4usf11xC9xdY/rriQABPe4usf11xC9xdY/rriQABPe4usf11xC9xdY/rriQABPe4usf11xC9xdY/rriQABPe4usf11xC9xdY/rriQABPe4usf11xC9xdY/rriQABPe4usf11xC9xdY/rriQABPe4usf11xC9xdY/rriQABPe4usf11xC9xdY/rriQABPe4usf11xC9xdY/rriQABPe4usf11xC9xdY/rriQABPe4usf11xC9xdY/rriQABPe4usf11xC9xdY/rriQABPe4usf11xC9xdY/rriQABPe4usf11xC9xdY/rriQABPe4usf11xC9xdY/rriQABPe4usf11xC9xdY/rriQABPe4usf11xC9xdY/rriQABNe4msf11xPeVXfxu6ynPT34HhqewKewt0gpHajhoqU9gU9hbpBSFDRUp7Ap7C3SCkKGipT2BT2FukZWFxChop09gU9hbpBSFDRUp7Ap7C3SCkKGipT2BT2FukFIUNFSnsCnsLdIKQoaKlPYFPYW6QUhQ0VKewKewt0gpChoqU9gU9hbpBSFDRUp7Ap7C3SCkKGipT2BT2FukbLB4i0NFKnsCnsLdIKRKGipT2BT2FukFIUNFSnsCnsLdIKQoaKlPYFPYW6QUhQ0VKewKewt0gpChopqw97knjlhZj3OQJ4LHY8rRCiMaAUD2UfM1LqIURjQCgKGxdRCiMaAUBQ2LqJu+BxcnipeoE0zL2ZPN+ZRmmxRRCiMaAUBRdi6iFEY0AoChsXUQojGgFAUNi6iFEY0DKwBmaltEKIyWAYoDM1LqIURjQCgKGxdRCiMaAUBQ2LqIURjQCgKGxdRJHwLETp3l5IBPNS1iJzoneGZsTUQojGgFAUNi6iFEY0AoChsXUQojGgFAUNi6iFEY0AoChsXUQojGgFAZmxcsE9pTPOul9x62mZ5cG+HaTXcLsOUlcy/XnQy6V0enwPoZvkbEt3C7je7GLsM12KbubNlsztieKJ4jeLK516NxtBlbcpPVTvtGabEt2zL0Fmals7eY73K5RgyW0X8iby3Glc9vqu/yYDNJ73mruF3HDZS23kUxdiZtbFF3C7je7Gbrmt2onttwLmbE93C7je7BdhmbFF3NnS/huGqSxM+UzdCd1Rkk9xG6X3JuC7DmLK5+hO6hmLK5m81BmbEl3C7je7BdhmuxRdwu46l5W17EXzvbvQjSWGZsU3c3jStjnJ6HKnsUZrLE85Kab19MR/uX/AGTNNvpJdcyL6VX3WYlqfluLnxe+MHS2gznP+UtTUtbbsdF+M0UZ2+vNxZaxzk9CrvNbuO5mW03893eU1dKZm7UVV6yoXNqO4mu4Xcb3YLsM12KLuF3G92MulLLNqIvtGZsT3cLuN7sF2GZsUXcLuN7sCSwzNiuJK5l5qeB6WgVo0pmX7tPkxHNEx2dbfT3e+o2yugv150MxJXQ/F8qDhkumQv16CR8BLF6e6eqeUevi6y89djaFK6Tc37SbxrRQlgS6Wovoc3ebmeMQ1rMk8WV8rN52d1bdxtKyudfw/EaOYsBLOhF9jXBLQOLlTvsMXivppPvhNBlNFdvhYWI0v3XboowhQNH2+BJFgp+Vd0Qk8o9L+x6Rw5Ox6psdZyWqngRPlc65vOp6FYCWryu3uIHy+bpVejMXjyhNZJUlcy8qblNrpocrk9yOHLJfRXl+V4JATI6dyOLPLiaSR3ULqN6KBRQ3/E2KocrnTlLUSU0U5u6G8YwpdNH686ll0DR6F7jzly5xEsz2S8/EldNc3m+U1jS3k81NyDx8vpLzfAxEl0s/C0t+PxrSSC6hdRvRQKKHT+JsXyUrpcmR8VhEkpo8XnbZyKi4D6BL2OX0aNnaMNUl0Vqcie5rznbj6ukkCyxZnJbj+8ibmjKHL+fNxO7tpJNQePnv3NLM8bQmkz9KokmiNs9CxLOhWE0eX8rlifGaMosFNLlid5ptGhJpcr/itMWj4t5I5mT0nLtcq9dUwC7aH9P/ACjqNBTS/F8ZDDoCWKnqqn94to+JpLz6yuz6+kN4Upn4v2Xd1Ru+XzN4vJ+dxmFA7r+4puZ4+GsksOUtVE9KontU2iy3k81u4cpARIicXlN3oYiwOLmt3LgLcfTWSS6hdRwkD3cftMUUNfxNii7G7JTP0b0GlFCwkumUvIm4zynjBPdJbEldBc37tO8wuUS5FgaC/d+LSSkh5+XKJh36Ocx6pysW2Cq+sbujfXQIZedsgr0/XvJos5Yiqnmyvcy03P5c8/1/37W1dpIlvp9xZgRUT2w+8p5dZktyk9xW/wAcNE6yqa5T7DcdPknax834fkeSQ42dOcnxIQkiTVifh3siG0tO22crbeWpCMyuf01SNop9fsMXxMxo/cXdFwE0CbymJ0+5rE8CSYmMy8x26MP2mfw4dGzv5zu9ENUiIqdC74eIqWa0nbXO78Urxp7RzL/EnT9ngSDM+dFzL07o2BrVRPr+U5RI2eta7P8A6tbGXxBs59naq+ez+29ELJmcK9NLkcvuYviaOclr8/FZ70EST62Oz8dtnKqt8GmjptVtU3EmP+nqUiJ9dJdhuRUTkX4cQ8xBnbUS3z2953+i86esYvI6zsohy5R6k8Yj9L8WJ59nghpV4k+796ieNOaSp6q7kNYk5YlvqsX2F8/DUcI/pdiRbETP5vPyIpM1yJ57ePdE/wCqHnLybMnFTi+syp4qdJn4kdL08OPnTl/yQcTSHH0U5qdyLgK4E3a/J9CtX2xYGBpBmdFvNT4cUx+kzNli5vwr+nRQmI+Z/LF91PERw561F9OTE9iQMlNxJOzdiO2xI6fDwL+4M/0dxo//AJOWL7nMxCPH8v8AqfGagpjzOaJzo/ehGY8x5f8AV/UMM+/hczSNG8rkf+oRDZY2f2/qbBRMzOeJ/U/VtB83nVbfMq/+2CeBqyIioier/liYGqRs34f/AJlUSRJ6xrbFzqxLO1iBBnrbU9V/sbLuaa/tnM+bETKt/mNT80P/ALKaJH0V5ifBir4Cdk4qRkS3MsRlvWavghpEnbG2elrPYsN7V7wXI8a5LXN82UqbbMuEniRq9FWH6zmovJksz/mETJ9URyKvGmZfParmKuf8BG6cVbNiIidCInghYn6uL0TXIjbdlvJoW+JO2LpLyoeXZOKnTZ4p4qMWzekvR4ElJ6/P0fRYv2Ll9EJN7TSsKo059i/7lO8zEkrbTl+Ienr4RymfHkWzX2bk2+KG8Wc0V5U7iCJJjMv15zZ8xo9PymdHqwMbwSS8yuU3nt3iWuZbM2Kip5ltToM3anpP483mVPQrE/K/ExIzOezmr/dh4CWYmNJejcbSszYrl2N+IwXZx+HcnM2MXp3ITx5jMvNXdHPNw5nRfn9G8ux5nP8AgXdFxLdJ6TJs5bEst4su3ruX5irFmvN6zl9tmApgzNiquxTRZgaNR0HLJmxruc33tehIsz9l+NNzhFePN9fWc2SZ0VT1mr7EdiNDEzvAXgU1wrjRrI7gzfk873FyLO6CZ/2d8J6eJ5lsxnTlJ4k1mTkTuqWOxz5dHpxGm/tF5vymJibWxu1jdyCWLM6VuxO6hmPM5mc1CXXEwvAXgU1wrjRvF6H/AI2ZtiZ141h/Ghkd8th5s1isT8r7d4qkZqyIza9lvIj2r4ECTOazk+veTRnD6bJNKlq7FToVFRd5b/5KY8r7+N8h51Y5bn5q1z0t/exF9tmBbk9P08jTWZ+10bvQzeZmPL5Yv6hh5x0zoMz/ALT/AJC7OTOZ210b47V8BdjFfm5yxX5+PL9t4yvAw6athqqrxwl9qzIjmpj7R/Pd3lB03otT1VT+4q+AusdH4MnzVqN2Ns/M5fE2l5jSXmRPhuEtcy2Zs9i+9LPEaNY/DuDNqsRir/G1fehiZmPI+7buEtckjTNuTsY1PcS5j9MbwF4FNcK5dGsja8E7J3Stt40TuiKuZbMDRJ6Xp5ib+zVP5Kd6GMqp4+PNZuP92idzA9DWM8+bf+P1V9eErhXzdIvqhVPJd78l+sFYoVQqi5kYOjqpsyPmdyfMgtqhWFzIxSPmXoLMzM528xd78RLVJY8fi5PFS6E9K1WCsUKoVSXMl+sFYoVQqi5kv1grFCqFUXMl+sbuj+G4W1TKxhcyX3R/DcCx+IXrFCqLmS/WCsUKoVRcyMGzFiovoW1DFYoVQqi5kv1iSYj2vcvrLvFlUFjC5kZLH0W8q+BZnJni58TvookSKTR4+ZOV28unxMluLH0ncq7zWsUFjBVJdcl+sFYoVQqi5kv1grFCqFUXXJfrBWKFUKouZL9YKxQqhVF0yMokxm/CngetqHgXRtx7TLM8ubfDq8c+qBUKuWGWeez2ZrVQKhVywyxYzWqgVCrlhlixmtVDZ8Xi5PFSnlmVeLGazUCoVcsMsWM1qoFQq5YZYsZrVQKhVywyxYzWqgVCrlhlixmtVAqFXLDLFjNaqBUKuWGWLGa1UCoVcsMsWM1qoFQq5YZYsZrVQ3fFzJ0lLLMq/iFjNZqBUKuWGWLGa1UCoVcsMsWM1qoFQq5YZYsZrVQKhVywyxYzWqgVCrlhlixmsuiHuss52rj32USeTUcHPQMAcnVkDAAZAwA9GbQtMAX0ZAwBPRkDAD0ZAwA9GQMAPRkDAD0ZAwA9GQMAPRkDAD0ZtC0wA9GQMAPRkDAD0ZAwA9GQMAPRkDAD0ZOgWHPjoFo9HPwOi8HQNTC7NuAcHQNTC7NuAHOgOi8HQNTC7NuAcHQNTC7NuAHOgOi8HQNTC7NuAcHQNTC7NuAHOgOi8HQNTC7NuAcHQNTC7NuAHOgOi8HQNTC7NuAcHQNTC7NuAHOgOi8HQNTC7NuAcHQNTC7NuAHOgOi8HQNTC7NuAcHQNTC7NuAHOgOi8HQNTC7NuBjg6BqYXZtwA52B0Xg6BqYXZtwDg6BqYXZtwA50B0Xg6BqYXZtwDg6BqYXZtwA50B0Xg6BqYXZtwDg6BqYXZtwA50B0Xg6BqYXZtwDg6BqYXZtwA50B0Xg6BqYXZtwDg6BqYXZtwA50B0Xg6BqYXZtwDg6BqYXZtwA50B0Xg6BqYXZtwDg6BqYXZtwA50B0Xg6BqYXZtwDg6BqYXZtwA50B0Xg6BqYXZtwDg6BqYXZtwA50B0Xg6BqYXZtwDg6BqYXZtwA50e/JV/46BqYXZtwPTXOFq2dR">
+      <nav class="navbar navbar-light bg-light justify-content-between">
+        <form class="form-inline">
+          <div class="row">
+            <div class="col text-center">
+          <button class="btn btn-primary btn-lg btn-block" type="submit">Login</button>
+            </div>
+          </div>
+        </form>
+      </nav>
 
-            <br>
-            <br>
+      <nav class="navbar navbar-light bg-light justify-content-between">
+        <form class="form-inline">
+          <div class="row">
+            <div class="col text-center">
+          <button id="signup-btn" class="btn btn-primary btn-lg btn-block" type="submit">Sign Up</button>
+            </div>
+          </div>
+        </form>
+      </nav>
 
-            <form id="data-form" action="#" method="post">
+      <div class="col-md-4 col-md-offset-4">
 
-                <input id="update-id" name="update-id" type="hidden">
-                <table id="data-input" class="table table-bordered">
-                    <tr>
-                        <th>User Name</th>
-                        <th>Email</th>
-                        <th>Password</th>
-                        <th>Age</th>
-                    </tr>
-                    <tr>
-                        <td><input id="username" name="username" type="text" class="form-control input-lg" minlength="2" required/></td>
-                        <td><input id="email" name="email" type="email" class="form-control input-lg" required/></td>
-                        <td><input id="password" name="password" type="text" class="form-control input-lg" minlength="2" required/></td>
-                        <td><input id="age" name="age" type="text" class="form-control input-lg" minlength="2" required/></td>
-                    </tr>
-                    <tr>
-                        <td colspan="4">
-                            <button id="submit-btn" type="button" class="btn btn-success">Submit</button>
-                        </td>
-                    </tr>
-                </table>
-            </form>
+      <form class= "d-none" id="data-form" action="#" method="post">
+        <input id="update-id" name="update-id" type="hidden">
 
-
-            <br>
-            <br>
-
-                <td><button id = 'button-signedIn' type="button" class="btn btn-signedButtons"> Signed In </button> </td>
-            <br>
-            <br>
-                <td><button id = 'button-signedUp' type='button' class='btn btn-signedButtons'> Signed Up </button> </td>
-              </tr>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-                <tr>
-                    <td><button id='button-contacts' type="button" class="btn btn-footer"> Contacts </button> </td>
-                    <td><button id='button-about' type="button" class="btn btn-footer"> More About Summer Nights</button> </td>
-                </tr>
-
+        <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" class="form-control" id="usarnamelogin" aria-describedby="usernamehelp" placeholder="username">
         </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="email">
+        </div>
+
+        <div class="form-group">
+          <label for="age">Age</label>
+          <input type="email" class="form-control" id="age" placeholder="age">
+        </div>
+        
+
+      <div class="form-group">
+        <label for="passwordlogin">Password</label>
+        <input type="password" class="form-control" id="passwordlogin" placeholder="Password">
+      </div>
+
+
+      <button type="Button" class="btn btn-primary">Submit</button>
+
+      </div>
+
     </div>
+
+    <div class="container">
+
+    <div class="accordion" id="accordionExample">
+      <div class="card">
+        <div class="card-header" id="headingThree">
+          <h2 class="mb-0">
+            <button id="contacts" class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Contacts
+            </button>
+          </h2>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+          <div class="card-body">
+            Caçador, Chico, Presidente, Eduardo, Ferrinhos
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </div>
+
 </body>
 
 </html>

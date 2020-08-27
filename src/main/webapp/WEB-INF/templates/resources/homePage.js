@@ -1,6 +1,15 @@
     $(document).ready(function(){
 
         $('#submit-btn').click(addUser);
+
+        document.getElementById("data-form").style.display="none";
+
+        $('#signup-btn').click(showForm);
+
+        $('[data-toggle="popover"]').popover();
+
+
+
     });
 
     function addUser() {
@@ -28,3 +37,7 @@
     function errorCallback() {
         alert('Error');
     };
+
+    function showForm() {
+        document.getElementById("data-form").style.display="block";
+    }

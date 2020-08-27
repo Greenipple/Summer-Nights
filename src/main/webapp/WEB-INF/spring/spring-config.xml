@@ -26,6 +26,6 @@
     </mvc:interceptors-->
 
     <import resource="persistence.xml"/>
-    <import resource="presentation.xml"/>
+    <!--import resource="presentation.xml"/-->
 
 </beans>

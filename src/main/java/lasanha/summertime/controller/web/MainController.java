@@ -9,12 +9,12 @@ public class MainController {
 
     @RequestMapping(path = {"/home", "/", ""})
     public String showHome() {
-        return "homePage.html";
+        return "/WEB-INF/templates/homePage.html";
     }
 
     @RequestMapping(path = "/resources/{item}")
     public String serveResources(@PathVariable String item) {
-        return "resources/" + item;
+        return "/WEB-INF/templates/resources/" + item;
     }
 
     @RequestMapping(path = "/user/{id}")

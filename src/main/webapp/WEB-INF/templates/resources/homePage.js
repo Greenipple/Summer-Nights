@@ -1,6 +1,6 @@
     $(document).ready(function(){
 
-        $('#submit-btn').click(addUser);
+        $('#signup-btn').click(addUser);
 
         //document.getElementById("data-form").style.display="none";
 

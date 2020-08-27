@@ -11,13 +11,13 @@ public class MainController {
     public String showHome() {
         return "homePage";
     }
-
+/*
     @RequestMapping(path = "/resources/{item}.{extension}")
     public String serveResources(@PathVariable String item, @PathVariable String extension) {
 
         return "resources/" + item + "." + extension;
     }
-
+*/
     @RequestMapping(path = "/user")
     public String showTellMeMore() {
         return "userPage";

@@ -16,7 +16,7 @@
     <!-- User @Controller, @Service annotations -->
     <mvc:annotation-driven/>
 
-    <mvc:resources mapping="/assets/**" location="/WEB-INF/templates/**"/>
+    <mvc:resources mapping="/resources/**" location="/WEB-INF/templates/resources/**"/>
 
     <!-- Base package to search for spring beans -->
     <context:component-scan base-package="lasanha.summertime"/>
@@ -25,7 +25,7 @@
         <bean class="org.academiadecodigo.javabank.interceptor.LogRequestsInterceptor"/>
     </mvc:interceptors-->
 
-    <import resource="persistence.xml"/>
-    <import resource="presentation.xml"/>
+    <import resource="WEB-INF/spring/persistence.xml"/>
+    <import resource="WEB-INF/spring/presentation.xml"/>
 
 </beans>

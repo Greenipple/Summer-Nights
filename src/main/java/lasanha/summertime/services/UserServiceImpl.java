@@ -23,9 +23,9 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public void save(User user) {
+    public User save(User user) {
 
-       jpaUserDao.saveOrUpdate(user);
+       return jpaUserDao.saveOrUpdate(user);
 
     }
 

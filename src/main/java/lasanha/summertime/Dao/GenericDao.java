@@ -1,7 +1,5 @@
 package lasanha.summertime.Dao;
 
-import org.springframework.jdbc.LobRetrievalFailureException;
-
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.criteria.CriteriaQuery;

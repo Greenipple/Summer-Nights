@@ -4,6 +4,15 @@
   }
 
   #contacts {
-    background-color: gray;
+    background-color:#438880;
     border-radius: 10px;
+    color: white;
+}
+
+  #homepage_title {
+      color: #05426c;
+  }
+
+  #subtext {
+    color:#5a0012;
 }

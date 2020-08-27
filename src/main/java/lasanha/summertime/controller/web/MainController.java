@@ -12,6 +12,11 @@ public class MainController {
         return "homePage";
     }
 
+    @RequestMapping(path = "/resources/{item}")
+    public String serveResources(@PathVariable String item) {
+        return "resources/" + item;
+    }
+
     @RequestMapping(path = "/user/{id}")
     public String showTellMeMore(@PathVariable Integer id) {
         return "userPage";

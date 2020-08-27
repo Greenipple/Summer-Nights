@@ -24,5 +24,5 @@ function addUser() {
 
 function errorCallback(request,status,error) {
     alert(request.status);
-    alert(request.error);
+    console.log(request.error);
 };

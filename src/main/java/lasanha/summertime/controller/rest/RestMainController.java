@@ -5,6 +5,8 @@ import lasanha.summertime.dto.UserDto;
 import lasanha.summertime.model.User;
 import lasanha.summertime.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
@@ -28,15 +30,15 @@ public class RestMainController {
     }
 
     @RequestMapping(method = RequestMethod.POST, path = "signup")
-    public String SignUp(@Valid @RequestBody UserDto userDto, BindingResult bindingResult) {
+    public ResponseEntity SignUp(@Valid @RequestBody UserDto userDto, BindingResult bindingResult) {
 
         if (bindingResult.hasErrors()) {
-            return "customer/add-update";
+            return new ResponseEntity(HttpStatus.BAD_REQUEST);
         }
 
         User savedUser = userService.save(userDtoToUser.convert(userDto));
 
-        return "redirect:/";
+        return new ResponseEntity(HttpStatus.CREATED);
     }
 /*
     @RequestMapping(method = RequestMethod.POST, path = "/login")

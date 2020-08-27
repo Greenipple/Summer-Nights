@@ -1,3 +1,5 @@
+
+
 .center {
     display: block;
     margin-left: auto;
@@ -41,11 +43,48 @@ h1{
 }
 
 .rounded{
+    margin-top: 5%;
+    margin-left: 30%;
     display:flex;
-    justify-content: center;
     width: 100%;
 }
 .card-img-top{
 
-    max-width: 500px;
+    max-width: 300px;
+}
+
+.container{
+
+    margin-top: 5%;
+    margin-left: 13%;
+}
+
+.stats{
+
+    margin-top: 2%;
+}
+
+.avatar{
+    margin-left: -10%;
+    max-width: 70%;
+}
+
+.greeting{
+
+    margin-left: -13%;
+    margin-top: 0%;
+
+}
+
+.sideMenu{
+    margin-top: -5%;
+    margin-left: 1%;
+
+}
+
+.likeOrNoLike{
+
+    margin-left: 95%;
+    margin-top: -20%;
+
 }

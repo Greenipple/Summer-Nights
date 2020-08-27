@@ -1,18 +1,49 @@
+
+var user;
+
 $(document).ready(function(){
 
-    var id = 1;
+    $('#submit-btn').click(tryLogin);
 
+
+
+
+});
+
+function tryLogin() {
+    $.ajax({
+        url: 'https://summer-nights.herokuapp.com/api/login',
+        type: 'POST',
+        data: JSON.stringify({
+            userName: $('#username').val(),
+            password: $('#password').val(),
+        }),
+        async: true,
+        contentType: 'application/json',
+        success: login,
+        error: errorCallback
+    });
+
+}
+
+function login(requestUser) {
+    user = requestUser
+    $('#login-form').hide()
+    $('#welcome-user').append(user.userName)
+}
+
+function getUser() {
     $.ajax({
         url: 'https://summer-nights.herokuapp.com/api/user/' + id,
         type: 'GET',
         async: true,
-        success: showName,
+        success: refreshUser,
         error: errorCallback
     });
-});
+}
 
-function showName(user) {
-    $('#welcome-user').append(user.userName);
+function refreshUser(requestUser) {
+    user = requestUser
 }
 
 function errorCallback() {

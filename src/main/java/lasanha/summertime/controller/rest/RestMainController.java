@@ -1,6 +1,7 @@
 package lasanha.summertime.controller.rest;
 
 import lasanha.summertime.converter.UserDtoToUser;
+import lasanha.summertime.converter.UserToUserDto;
 import lasanha.summertime.dto.UserDto;
 import lasanha.summertime.model.AppUser;
 import lasanha.summertime.services.UserService;
@@ -18,6 +19,7 @@ public class RestMainController {
 
     UserService userService;
     UserDtoToUser userDtoToUser;
+    UserToUserDto userToUserDto;
 
     @Autowired
     public void setUserService(UserService userService) {
@@ -27,6 +29,11 @@ public class RestMainController {
     @Autowired
     public void setUserDtoToUser(UserDtoToUser userDtoToUser) {
         this.userDtoToUser = userDtoToUser;
+    }
+
+    @Autowired
+    public void setUserToUserDto(UserToUserDto userToUserDto) {
+        this.userToUserDto = userToUserDto;
     }
 
     @RequestMapping(method = RequestMethod.POST, path = "signup")
@@ -47,4 +54,16 @@ public class RestMainController {
 
     }
 */
+
+    @RequestMapping(path = "user/{id}")
+    public ResponseEntity<UserDto> getUser(@PathVariable Integer id) {
+
+        AppUser appUser = userService.getUser(id);
+
+        if (appUser == null) {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+
+        return new ResponseEntity<>(userToUserDto.convert(appUser), HttpStatus.OK);
+    }
 }

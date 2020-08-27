@@ -18,7 +18,7 @@ public class UserToUserDto {
     }
 
 
-    public void convert(AppUser user){
+    public UserDto convert(AppUser user){
 
         UserDto userDto = new UserDto();
         userDto.setUserName(user.getUserName());
@@ -26,5 +26,6 @@ public class UserToUserDto {
         userDto.setAge(user.getAge());
         userDto.setEmail(user.getEmail());
 
+        return userDto;
     }
 }

@@ -1,7 +1,7 @@
 package lasanha.summertime.services;
 
 import lasanha.summertime.model.Song;
-import lasanha.summertime.model.User;
+import lasanha.summertime.model.AppUser;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -9,9 +9,9 @@ import java.util.ArrayList;
 @Service
 public interface UserService {
 
-    User getUser(Integer id);
+    AppUser getUser(Integer id);
 
-     void save(User user);
+    AppUser save(AppUser user);
 
     void delete(Integer id);
 

@@ -25,7 +25,6 @@
 
     };
 
-    function errorCallback(request,status,error) {
-        alert(request.status);
-        console.log(request.error);
+    function errorCallback() {
+        alert('Error');
     };

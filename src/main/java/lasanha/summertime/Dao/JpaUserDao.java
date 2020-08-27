@@ -1,15 +1,13 @@
 package lasanha.summertime.Dao;
 
-import lasanha.summertime.model.Song;
-import lasanha.summertime.model.User;
-import org.springframework.beans.factory.annotation.Autowired;
+import lasanha.summertime.model.AppUser;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
 import java.util.Set;
 
 @Repository
-public class JpaUserDao extends GenericDao {
+public class JpaUserDao extends GenericDao<AppUser> {
 
 
             public Set<Song> getSongListByUserId(User user){
@@ -18,7 +16,7 @@ public class JpaUserDao extends GenericDao {
             }
 
     public JpaUserDao() {
-        super(User.class);
+        super(AppUser.class);
     }
 
 

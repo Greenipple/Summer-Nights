@@ -22,7 +22,7 @@ public class Song {
     Integer songRating;
 
     @ManyToMany(mappedBy = "songs")
-    private Set<User> users = new HashSet<>();
+    private Set<AppUser> users = new HashSet<>();
 
     @ManyToOne()
     @JoinColumn(name = "fk_musicGenre")
@@ -60,11 +60,11 @@ public class Song {
         this.author = author;
     }
 
-    public Set<User> getUsers() {
+    public Set<AppUser> getUsers() {
         return users;
     }
 
-    public void setUsers(Set<User> users) {
+    public void setUsers(Set<AppUser> users) {
         this.users = users;
     }
 }

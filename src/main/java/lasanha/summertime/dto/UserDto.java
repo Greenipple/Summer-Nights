@@ -26,7 +26,6 @@ public class UserDto {
     private String email;
 
     @NotNull(message = "Please insert you age")
-    @NotBlank(message = "Please fill this field")
     public Integer age;
 
     public Integer getId() {

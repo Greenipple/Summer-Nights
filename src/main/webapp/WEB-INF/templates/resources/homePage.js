@@ -1,28 +1,31 @@
-$(document).ready(function(){
-    $('#submit-btn').click(add);});
-function add() {
-    $.ajax({
-        url: 'https://summer-nights.herokuapp.com/api/signup',
-        type: 'POST',
-        data: JSON.stringify({
-            userName: $('#username').val(),
-            email: $('#email').val(),
-            password: $('#password').val(),
-            age:$('#age').val(),
-        }),
-        async: true,
-        contentType: 'application/json',
-        success: addUser,
-        error: errorCallback
+    $(document).ready(function(){
+
+        $('#submit-btn').click(addUser);
     });
-};
 
-function addUser() {
-    console.log('User added!')
+    function addUser() {
+        $.ajax({
+            url: 'https://summer-nights.herokuapp.com/api/signup',
+            type: 'POST',
+            data: JSON.stringify({
+                userName: $('#username').val(),
+                email: $('#email').val(),
+                password: $('#password').val(),
+                age:$('#age').val(),
+            }),
+            async: true,
+            contentType: 'application/json',
+            success: added,
+            error: errorCallback
+        });
+    };
 
-};
+    function added() {
+        console.log('User added!')
 
-function errorCallback(request,status,error) {
-    alert(request.status);
-    console.log(request.error);
-};
+    };
+
+    function errorCallback(request,status,error) {
+        alert(request.status);
+        console.log(request.error);
+    };

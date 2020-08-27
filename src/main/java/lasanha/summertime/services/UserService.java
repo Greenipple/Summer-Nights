@@ -4,6 +4,8 @@ import lasanha.summertime.model.Song;
 import lasanha.summertime.model.AppUser;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
+
 @Service
 public interface UserService {
 
@@ -13,9 +15,11 @@ public interface UserService {
 
     void delete(Integer id);
 
-    AppUser matches();
+    ArrayList matches(User currentUser);
 
     Song addSong(Integer Id);
+
+
 
 
 

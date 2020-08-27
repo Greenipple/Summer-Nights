@@ -1,12 +1,14 @@
 package lasanha.summertime.Dao;
 
+import org.springframework.ui.Model;
+
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
 import java.util.List;
 
-public abstract class GenericDao<T> implements Dao<T> {
+public abstract class GenericDao<T extends Model> implements Dao<T> {
 
     protected Class<T> modelType;
 

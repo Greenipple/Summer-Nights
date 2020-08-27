@@ -50,7 +50,7 @@ public class RestMainController {
     }
 
     @RequestMapping(method = RequestMethod.POST, path = "/login")
-    public ResponseEntity<AppUser> SignIp(@Valid @RequestBody LoginDto loginDto, BindingResult bindingResult) {
+    public ResponseEntity<AppUser> SignIn(@Valid @RequestBody LoginDto loginDto, BindingResult bindingResult) {
 
         if (bindingResult.hasErrors()) {
             return new ResponseEntity(HttpStatus.BAD_REQUEST);

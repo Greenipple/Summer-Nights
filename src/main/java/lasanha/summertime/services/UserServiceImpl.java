@@ -104,7 +104,7 @@ public class UserServiceImpl implements UserService {
     public AppUser authenticate(LoginDto loginDto) {
 
         for (AppUser user : jpaUserDao.findAll()) {
-            if (loginDto.getUserName() == user.getUserName() && loginDto.getPassword() == user.getPassWord()) {
+            if (loginDto.getUserName().equals(user.getUserName()) && loginDto.getPassword().equals(user.getPassWord())) {
                 return user;
             }
         }

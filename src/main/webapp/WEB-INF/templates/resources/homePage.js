@@ -2,9 +2,9 @@
 
         $('#submit-btn').click(addUser);
 
-        document.getElementById("data-form").style.display="none";
+        //document.getElementById("data-form").style.display="none";
 
-        $('#signup-btn').click(showForm);
+        //$('#signup-btn').click(showForm);
 
 
     });

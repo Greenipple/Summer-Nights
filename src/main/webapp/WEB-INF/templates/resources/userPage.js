@@ -12,7 +12,7 @@ $(document).ready(function(){
 });
 
 function showName(user) {
-    $('#username').val(user.userName);
+    $('#welcome-user').append(user.userName);
 }
 
 function errorCallback() {

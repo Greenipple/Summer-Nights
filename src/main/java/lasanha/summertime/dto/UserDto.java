@@ -9,23 +9,23 @@ public class UserDto {
 
     private  Integer id;
 
-    //@NotNull(message = "Please fill in this field")
-    //@NotBlank(message="Please fill in this field")
-    //@Size(min = 2, max=64)
+    @NotNull(message = "Please fill in this field")
+    @NotBlank(message="Please fill in this field")
+    @Size(min = 2, max=64)
     private String userName;
 
 
-    //@NotNull(message = "Please fill in this field")
-    //@NotBlank(message="Please fill in this field")
-    //@Size(min = 2, max=64)
+    @NotNull(message = "Please fill in this field")
+    @NotBlank(message="Please fill in this field")
+    @Size(min = 2, max=64)
     private String password;
 
 
-    //@Email
-    //@NotBlank(message ="please input a valid email")
+    @Email
+    @NotBlank(message ="please input a valid email")
     private String email;
 
-    //@NotNull(message = "Please insert you age")
+    @NotNull(message = "Please insert you age")
     public Integer age;
 
     public Integer getId() {

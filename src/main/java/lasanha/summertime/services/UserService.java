@@ -9,7 +9,7 @@ public interface UserService {
 
     User getUser(Integer id);
 
-     void save(User user);
+    User save(User user);
 
     void delete(Integer id);
 

@@ -20,5 +20,10 @@ public class JpaUserDao extends GenericDao<AppUser> {
         super(AppUser.class);
     }
 
+    public void addSong(AppUser user, Song song){
+                user.addSong(song);
+
+    }
+
 
 }

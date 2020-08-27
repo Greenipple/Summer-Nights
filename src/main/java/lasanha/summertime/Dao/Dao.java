@@ -14,5 +14,4 @@ public interface Dao<T> {
     T saveOrUpdate(T Object);
 
     void delete(Integer id);
-
 }

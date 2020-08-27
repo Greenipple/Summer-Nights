@@ -18,7 +18,7 @@ public interface UserService {
 
     ArrayList matches(AppUser currentUser);
 
-    Song addSong(Integer Id);
+    void addSong(AppUser user, Song song);
 
 
 

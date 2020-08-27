@@ -72,6 +72,12 @@ public class AppUser {
         this.songs = songs;
     }
 
+    public void addSong(Song song){
+        songs.add(song);
+    }
+
+
+
 }
 
 

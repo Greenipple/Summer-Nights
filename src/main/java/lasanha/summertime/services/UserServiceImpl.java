@@ -95,8 +95,8 @@ public class UserServiceImpl implements UserService {
     }
 */
     @Override
-    public Song addSong(Integer Id) {
-        return null;
+    public void addSong(AppUser user, Song song) {
+        jpaUserDao.addSong(user, song);
     }
 }
 

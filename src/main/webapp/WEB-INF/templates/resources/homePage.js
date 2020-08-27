@@ -29,7 +29,7 @@
     function added() {
         var alertContainer = $('#alerts');
         var alert = '<div class="alert alert-success alert-dismissible" role="alert">' +
-            '<strong>Sign in successful. Welcome to summernight.</strong>' +
+            '<strong>Register successful. Welcome to summernight.</strong>' +
             '<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>'
 
         alertContainer.append(alert);

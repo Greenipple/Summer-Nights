@@ -1,5 +1,6 @@
 package lasanha.summertime.services;
 
+import lasanha.summertime.dto.LoginDto;
 import lasanha.summertime.model.Song;
 import lasanha.summertime.model.AppUser;
 import org.springframework.context.ApplicationContext;
@@ -21,10 +22,5 @@ public interface UserService {
     Song addSong(Integer Id);
 
 
-
-
-
-
-
-
+    Integer authenticate(LoginDto loginDto);
 }

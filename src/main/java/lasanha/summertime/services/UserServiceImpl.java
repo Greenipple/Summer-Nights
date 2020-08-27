@@ -1,6 +1,7 @@
 package lasanha.summertime.services;
 
 import lasanha.summertime.Dao.JpaUserDao;
+import lasanha.summertime.dto.LoginDto;
 import lasanha.summertime.model.Song;
 import lasanha.summertime.model.AppUser;
 import org.apache.catalina.User;
@@ -96,6 +97,19 @@ public class UserServiceImpl implements UserService {
 */
     @Override
     public Song addSong(Integer Id) {
+        return null;
+    }
+
+
+    @Override
+    public Integer authenticate(LoginDto loginDto) {
+
+        for (AppUser user : jpaUserDao.findAll()) {
+            if (loginDto.getUserName() == user.getUserName() && loginDto.getPassword() == user.getPassWord()) {
+                return user.getId();
+            }
+        }
+
         return null;
     }
 }

@@ -2,6 +2,7 @@ package lasanha.summertime.controller.rest;
 
 import lasanha.summertime.converter.UserDtoToUser;
 import lasanha.summertime.converter.UserToUserDto;
+import lasanha.summertime.dto.LoginDto;
 import lasanha.summertime.dto.UserDto;
 import lasanha.summertime.model.AppUser;
 import lasanha.summertime.services.UserService;
@@ -47,13 +48,23 @@ public class RestMainController {
 
         return new ResponseEntity(HttpStatus.CREATED);
     }
-/*
+
     @RequestMapping(method = RequestMethod.POST, path = "/login")
-    public String SignUp(@RequestBody UserDto userDto) {
+    public ResponseEntity<Integer> SignIp(@Valid @RequestBody LoginDto loginDto, BindingResult bindingResult) {
 
+        if (bindingResult.hasErrors()) {
+            return new ResponseEntity(HttpStatus.BAD_REQUEST);
+        }
 
+        Integer id = userService.authenticate(loginDto);
+
+        if (id == null) {
+            return new ResponseEntity(HttpStatus.FORBIDDEN);
+        }
+
+        return new ResponseEntity<>(id, HttpStatus.OK);
     }
-*/
+
 
     @RequestMapping(path = "user/{id}")
     public ResponseEntity<UserDto> getUser(@PathVariable Integer id) {

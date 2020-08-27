@@ -24,7 +24,7 @@ public class UserServiceImpl implements UserService {
     @Override
     public AppUser getUser(Integer id) {
 
-        return (AppUser) jpaUserDao.findById(id);
+        return jpaUserDao.findById(id);
     }
 
     @Transactional
@@ -92,7 +92,6 @@ public class UserServiceImpl implements UserService {
             }
 
         }
-
     }
 */
     @Override
@@ -112,5 +111,6 @@ public class UserServiceImpl implements UserService {
 
         return null;
     }
+    
 }
 

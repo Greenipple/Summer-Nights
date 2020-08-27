@@ -1,0 +1,9 @@
+.jumbotron {
+    background-image: url("grease.jpg");
+    background-size: cover;
+  }
+
+  #contacts {
+    background-color: gray;
+    border-radius: 10px;
+}

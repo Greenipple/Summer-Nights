@@ -18,8 +18,8 @@ public class MainController {
         return "resources/" + item + "." + extension;
     }
 
-    @RequestMapping(path = "/user/{id}")
-    public String showTellMeMore(@PathVariable Integer id) {
+    @RequestMapping(path = "/user")
+    public String showTellMeMore() {
         return "userPage";
     }
 

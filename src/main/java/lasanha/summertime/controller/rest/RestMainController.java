@@ -5,6 +5,7 @@ import lasanha.summertime.converter.UserToUserDto;
 import lasanha.summertime.dto.LoginDto;
 import lasanha.summertime.dto.UserDto;
 import lasanha.summertime.model.AppUser;
+import lasanha.summertime.model.Song;
 import lasanha.summertime.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -76,5 +77,13 @@ public class RestMainController {
         }
 
         return new ResponseEntity<>(userToUserDto.convert(appUser), HttpStatus.OK);
+    }
+
+    @RequestMapping(method = RequestMethod.POST, path = "user/{id}/likesong")
+    public ResponseEntity likeSong(@RequestBody Song song, @PathVariable Integer id) {
+
+        userService.addSong(userService.getUser(id), song);
+
+        return new ResponseEntity(HttpStatus.OK);
     }
 }

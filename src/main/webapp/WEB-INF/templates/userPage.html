@@ -10,6 +10,10 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 
+
+
+
+
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
           crossorigin="anonymous">
@@ -26,7 +30,19 @@
 
 
 
-        <h1 id ="UserPageTitleId" class="UserPageTitleClass">Summer Nights</h1>
+        <style>
+            body {
+                background-image: url('https://www.kodreta.com/wp-content/uploads/2017/07/2.jpg');
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: 100% 100%;
+            }
+        </style>
+
+
+
+
+        <h1 id ="UserPageTitleId" class="UserPageTitleClass" style="color:rgb(255,0,0);">Summer Nights </h1>
         <br>
         <h3 id="BeforeButtonsId" class="BeforeButtonsClass">Welcom Back, UserName! </h3> <!--falta o nome de cada user-->
 
@@ -45,7 +61,9 @@
         <br>
         <br>
         <td><button id = 'button-chat' type='button' class='btn btn-userOptions'> Chat </button> </td>
-
+        <br>
+        <br>
+        <td><button id = 'button-logout' type='button' class='btn btn-userOptions'> Logout </button> </td>
         <br>
         <br>
         <br>
@@ -54,8 +72,18 @@
         <br>
         <br>
         <tr>
-            <td><button id='button-contacts' type="button" class="btn btn-footer"> Contacts </button> </td>
-            <td><button id='button-about' type="button" class="btn btn-footer"> More About Summer Nights</button> </td>
+
+            <!---  <td><button id='button-contacts' type="button" class="btn btn-footer"> Contacts </button> </td>
+              <td><button id='button-about' type="button" class="btn btn-footer"> More About Summer Nights</button> </td>
+            -->
+
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Contacts</a></li>
+                    <li class="breadcrumb-item"><a href="#">More About Summer Nights</a></li>
+
+                </ol>
+            </nav>
         </tr>
         <br>
         <br>

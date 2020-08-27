@@ -9,9 +9,9 @@ public interface UserService {
 
     User getUser(Integer id);
 
-    User save(User user);
+     void save(User user);
 
-    User delete(Integer id);
+    void delete(Integer id);
 
     User matches();
 

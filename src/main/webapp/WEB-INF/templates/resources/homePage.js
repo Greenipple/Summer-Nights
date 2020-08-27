@@ -6,9 +6,6 @@
 
         $('#signup-btn').click(showForm);
 
-        $('[data-toggle="popover"]').popover();
-
-
 
     });
 

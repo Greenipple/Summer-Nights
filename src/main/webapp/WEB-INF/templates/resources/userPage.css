@@ -1,0 +1,51 @@
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    color: coral;
+    font-size: 600%; /*ou 6.5em; /* 40px/16=2.5em */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.card-img-top {
+    position: relative;
+    left: 5%;
+    height: 60%;
+    width: 60%;
+
+}
+
+h1{
+    text-align:  left;
+
+}
+
+.rectangle {
+    align-items: left;
+    left: 5%;
+    width: 25%;
+    height: 10%;
+    margin: auto;
+    z-index: -70;
+    border: 5px solid lightgray;
+    fill: blanchedalmond;
+}
+
+.breadcrum{
+    width: 200px;
+    height: 400px;
+    object-fit: none;
+    object-position: 20px 40%;
+    border: 5px solid grey;
+}
+
+.rounded{
+    display:flex;
+    justify-content: center;
+    width: 100%;
+}
+.card-img-top{
+
+    max-width: 500px;
+}

@@ -1,6 +1,7 @@
 package lasanha.summertime.Dao;
 
 import lasanha.summertime.model.AppUser;
+import lasanha.summertime.model.Song;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -10,7 +11,7 @@ import java.util.Set;
 public class JpaUserDao extends GenericDao<AppUser> {
 
 
-            public Set<Song> getSongListByUserId(User user){
+            public Set<Song> getSongListByUserId(AppUser user){
 
                 return user.getSongs(user);
             }

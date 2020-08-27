@@ -12,9 +12,10 @@ public class MainController {
         return "/WEB-INF/templates/homePage.html";
     }
 
-    @RequestMapping(path = "/resources/{item}")
-    public String serveResources(@PathVariable String item) {
-        return "/WEB-INF/templates/resources/" + item;
+    @RequestMapping(path = "/resources/{item}.{extension}")
+    public String serveResources(@PathVariable String item, @PathVariable String extension) {
+
+        return "/WEB-INF/templates/resources/" + item + "." + extension;
     }
 
     @RequestMapping(path = "/user/{id}")

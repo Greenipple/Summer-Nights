@@ -2,7 +2,7 @@ package lasanha.summertime.services;
 
 import lasanha.summertime.Dao.JpaUserDao;
 import lasanha.summertime.model.Song;
-import lasanha.summertime.model.User;
+import lasanha.summertime.model.AppUser;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -18,14 +18,14 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public User getUser(Integer id) {
+    public AppUser getUser(Integer id) {
 
-        return (User) jpaUserDao.findById(id);
+        return (AppUser) jpaUserDao.findById(id);
     }
 
     @Transactional
     @Override
-    public User save(User user) {
+    public AppUser save(AppUser user) {
 
        return jpaUserDao.saveOrUpdate(user);
 
@@ -39,7 +39,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public User matches() {
+    public AppUser matches() {
         return null;
     }
 

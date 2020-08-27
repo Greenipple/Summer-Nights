@@ -6,8 +6,8 @@ import java.util.List;
 import java.util.Set;
 
 @Entity
-@Table(name = "user")
-public class User {
+@Table(name = "appuser")
+public class AppUser {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

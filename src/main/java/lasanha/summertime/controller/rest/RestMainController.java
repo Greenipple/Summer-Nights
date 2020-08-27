@@ -2,7 +2,7 @@ package lasanha.summertime.controller.rest;
 
 import lasanha.summertime.converter.UserDtoToUser;
 import lasanha.summertime.dto.UserDto;
-import lasanha.summertime.model.User;
+import lasanha.summertime.model.AppUser;
 import lasanha.summertime.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -36,7 +36,7 @@ public class RestMainController {
             return new ResponseEntity(HttpStatus.BAD_REQUEST);
         }
 
-        User savedUser = userService.save(userDtoToUser.convert(userDto));
+        AppUser savedUser = userService.save(userDtoToUser.convert(userDto));
 
         return new ResponseEntity(HttpStatus.CREATED);
     }

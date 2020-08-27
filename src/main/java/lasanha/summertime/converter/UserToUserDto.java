@@ -2,7 +2,7 @@ package lasanha.summertime.converter;
 
 
 import lasanha.summertime.dto.UserDto;
-import lasanha.summertime.model.User;
+import lasanha.summertime.model.AppUser;
 import lasanha.summertime.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -18,7 +18,7 @@ public class UserToUserDto {
     }
 
 
-    public void convert(User user){
+    public void convert(AppUser user){
 
         UserDto userDto = new UserDto();
         userDto.setUserName(user.getUserName());

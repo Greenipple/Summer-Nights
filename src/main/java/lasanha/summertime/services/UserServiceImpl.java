@@ -3,6 +3,7 @@ package lasanha.summertime.services;
 import lasanha.summertime.Dao.JpaUserDao;
 import lasanha.summertime.model.Song;
 import lasanha.summertime.model.AppUser;
+import org.apache.catalina.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -41,7 +42,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public ArrayList matches(User currentUser) {
+    public ArrayList matches(AppUser currentUser) {
         int numberUsersReturn = 5;
 
         //HashMap<Object, Set<Song>> allUsers = new HashMap<>();
@@ -49,8 +50,8 @@ public class UserServiceImpl implements UserService {
         List<Integer> matchedUserSongCountList = new ArrayList<>(matchedUsersSongCount.values());
         ArrayList<User> returnedUsersMatched = new ArrayList<>();
 
-        List<User> users = jpaUserDao.findAll();
-        for (User user : users) {
+        List<AppUser> users = jpaUserDao.findAll();
+        for (AppUser user : users) {
             Integer matchCount = 0;
             if (user == currentUser) {
                 continue;

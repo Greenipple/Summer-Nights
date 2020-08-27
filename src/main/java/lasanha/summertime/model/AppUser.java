@@ -64,7 +64,7 @@ public class AppUser {
         this.age = age;
     }
 
-    public Set<Song> getSongs(User user) {
+    public Set<Song> getSongs(AppUser user) {
         return user.getSongs(user);
     }
 

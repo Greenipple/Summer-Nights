@@ -1,5 +1,5 @@
-​$(document).ready(function(){
-    $('#submit-btn').click(add);});​
+$(document).ready(function(){
+    $('#submit-btn').click(add);});
 function add() {
     $.ajax({
         url: 'https://summer-nights.herokuapp.com/api/signup',

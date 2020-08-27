@@ -101,11 +101,11 @@ public class UserServiceImpl implements UserService {
 
 
     @Override
-    public Integer authenticate(LoginDto loginDto) {
+    public AppUser authenticate(LoginDto loginDto) {
 
         for (AppUser user : jpaUserDao.findAll()) {
-            if (loginDto.getUserName() == user.getUserName() && loginDto.getPassword() == user.getPassWord()) {
-                return user.getId();
+            if (loginDto.getUserName().equals(user.getUserName()) && loginDto.getPassword().equals(user.getPassWord())) {
+                return user;
             }
         }
 

@@ -50,19 +50,19 @@ public class RestMainController {
     }
 
     @RequestMapping(method = RequestMethod.POST, path = "/login")
-    public ResponseEntity<Integer> SignIp(@Valid @RequestBody LoginDto loginDto, BindingResult bindingResult) {
+    public ResponseEntity<AppUser> SignIn(@Valid @RequestBody LoginDto loginDto, BindingResult bindingResult) {
 
         if (bindingResult.hasErrors()) {
             return new ResponseEntity(HttpStatus.BAD_REQUEST);
         }
 
-        Integer id = userService.authenticate(loginDto);
+        AppUser appUser = userService.authenticate(loginDto);
 
-        if (id == null) {
+        if (appUser == null) {
             return new ResponseEntity(HttpStatus.FORBIDDEN);
         }
 
-        return new ResponseEntity<>(id, HttpStatus.OK);
+        return new ResponseEntity<>(appUser, HttpStatus.OK);
     }
 
 

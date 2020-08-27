@@ -37,9 +37,8 @@
 
 </div>
 <div class="card-body">
-    <h5 class="card-title">Welcome Back,</h5>
-    <p class="card-text">UserName</p>
-    <a href="#" class="btn btn-danger" >Logout</a>
+    <h5 id="welcome-user" class="card-title">Welcome Back, </h5>
+    <a href="https://summer-nights.herokuapp.com/" class="btn btn-danger" >Logout</a>
 </div>
 </div>
 
@@ -49,17 +48,17 @@
 
 <div class="container">
 
-    <div class="col-md-12 " style="margin-bottom:40px;">
+    <div id="login-form" class="col-md-12 " style="margin-bottom:40px;">
         <div class="col-md-4 col-md-offset-4">
             <form class="row row justify-content-md-center">
                 <label for="username">Username</label>
                 <input type="text" class="form-control" id="username" aria-describedby="usernamehelp" placeholder="Username">
                 <small id="usernamehelp" class="form-text text-muted">Please enter your username.</small>
                 <div class="form-group">
-                    <label for="passwordlogin">Password</label>
-                    <input type="password" class="form-control" id="passwordlogin" placeholder="Password">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Password">
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button id="submit-btn" type="button" class="btn btn-primary">Submit</button>
             </form>
         </div>
     </div>

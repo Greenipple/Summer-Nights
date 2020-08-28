@@ -40,11 +40,11 @@ function like() {
     console.log(currentSong);
     console.log($('.ytp-title-link').text());
 
-    $('.ytp-next-button').click();
+    $('.ytp-next-button').trigger('click');
 }
 
 function dislike() {
-    $('.ytp-next-button').click();
+    $('.ytp-next-button').trigger('click');
 }
 
 function getUser() {

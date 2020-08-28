@@ -31,6 +31,8 @@ function tryLogin() {
 function login(requestUser) {
     user = requestUser
     $('#login-form').hide()
+    $('#logo1').hide()
+    $('#logo2').hide()
     $('#welcome-user').append(user.userName)
 }
 

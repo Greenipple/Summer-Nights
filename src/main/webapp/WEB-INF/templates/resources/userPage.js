@@ -1,12 +1,13 @@
 
 var user;
-var currentSong;
 
 $(document).ready(function(){
 
     $('#submit-btn').click(tryLogin);
 
     $('#like').click(like);
+
+    $('#dislike').click(dislike);
 
 
 });
@@ -34,10 +35,16 @@ function login(requestUser) {
 }
 
 function like() {
-    currentSong = $('.ytp-title-link').text();
+    var currentSong = $('.ytp-title-link').text();
 
     console.log(currentSong);
     console.log($('.ytp-title-link').text());
+
+    $('.ytp-next-button').click();
+}
+
+function dislike() {
+    $('.ytp-next-button').click();
 }
 
 function getUser() {

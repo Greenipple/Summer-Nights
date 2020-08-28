@@ -1,11 +1,12 @@
 
 var user;
+var currentSong;
 
 $(document).ready(function(){
 
     $('#submit-btn').click(tryLogin);
 
-
+    $('#like').click(like);
 
 
 });
@@ -30,6 +31,12 @@ function login(requestUser) {
     user = requestUser
     $('#login-form').hide()
     $('#welcome-user').append(user.userName)
+}
+
+function like() {
+    currentSong = $('.ytp-title-link').text();
+
+    console.log(currentSong);
 }
 
 function getUser() {

@@ -1,135 +1,18 @@
-
-
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    color: coral;
-    font-size: 600%; /*ou 6.5em; /* 40px/16=2.5em */
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+.jumbotron {
+    background-image: url("https://uploads.metropoles.com/wp-content/uploads/2019/12/16114017/alwaysgrease_72224230_967004103670421_2144361719224914411_n.jpg");
+    background-size: cover;
 }
 
-.card-img-top {
-    position: relative;
-    left: 5%;
-    height: 60%;
-    width: 60%;
-
+#contacts {
+    background-color:#438880;
+    border-radius: 10px;
+    color: white;
 }
 
-h1{
-    text-align:  left;
-
+#homepage_title {
+    color: #05426c;
 }
 
-.rectangle {
-    align-items: left;
-    left: 5%;
-    width: 25%;
-    height: 10%;
-    margin: auto;
-    z-index: -70;
-    border: 5px solid lightgray;
-    fill: blanchedalmond;
-}
-
-.breadcrum{
-    width: 200px;
-    height: 400px;
-    object-fit: none;
-    object-position: 20px 40%;
-    border: 5px solid grey;
-}
-
-.rounded{
-    margin-top: 5%;
-    margin-left: 30%;
-    display:flex;
-    width: 100%;
-}
-.card-img-top{
-
-    max-width: 300px;
-}
-
-.userForm{
-    margin-left: 17%;
-    margin-top: 5%;
-    width: 100%;
-}
-
-
-.avatar{
-    margin-top: -5%;
-    margin-left: -10%;
-    max-width: 70%;
-}
-
-.greeting{
-
-    margin-left: -13%;
-    margin-top: 1%;
-
-}
-
-.sideMenu{
-    margin-top: -10%;
-    margin-left: 1%;
-
-}
-
-body{
-    background:#f5f5f5;
-    margin-top:20px;
-}
-.card {
-    border: none;
-    -webkit-box-shadow: 1px 0 20px rgba(96,93,175,.05);
-    box-shadow: 1px 0 20px rgba(96,93,175,.05);
-    margin-bottom: 30px;
-}
-.table th {
-    font-weight: 500;
-    color: #827fc0;
-}
-.table thead {
-    background-color: #f3f2f7;
-}
-.table>tbody>tr>td, .table>tfoot>tr>td, .table>thead>tr>td {
-    padding: 14px 12px;
-    vertical-align: middle;
-}
-.table tr td {
-    color: #8887a9;
-}
-.thumb-sm {
-    height: 32px;
-    width: 32px;
-}
-.badge-soft-warning {
-    background-color: rgba(248,201,85,.2);
-    color: #f8c955;
-}
-
-.badge {
-    font-weight: 500;
-}
-.badge-soft-primary {
-    background-color: rgba(96,93,175,.2);
-    color: #605daf;
-}
-
-.matches {
-
-    width: 85%;
-    height: 30%;
-    margin-top: -100%;
-}
-
-.LikeDislike{
-
-    margin-top: -30%;
-    margin-left: 60%;
-
+#subtext {
+    color:#5a0012;
 }

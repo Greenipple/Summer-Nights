@@ -37,6 +37,7 @@ function like() {
     currentSong = $('.ytp-title-link').text();
 
     console.log(currentSong);
+    console.log($('.ytp-title-link').text());
 }
 
 function getUser() {

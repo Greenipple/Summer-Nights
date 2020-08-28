@@ -32,6 +32,7 @@ function login(requestUser) {
     user = requestUser
     $('#login-form').hide()
     $('#logo2').hide()
+    $('#sidemenu').show()
     $('#welcome-user').append(user.userName)
 }
 

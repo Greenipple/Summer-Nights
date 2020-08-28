@@ -9,6 +9,7 @@ $(document).ready(function(){
 
     $('#dislike').click(dislike);
 
+    document.getElementById("welcome-user").style.display="block";
 
 });
 
